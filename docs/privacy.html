@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZAlgo Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for ZAlgo Estimated Score for X Tweet Chrome Extension" />
+
+  <style>
+    :root {
+      --bg: #0f1419;
+      --fg: #e7e9ea;
+      --muted: #8b98a5;
+      --border: #2f3336;
+      --accent: #1d9bf0;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 20px 80px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 880px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      color: #ffffff;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      margin: 12px 0 12px 20px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(29, 155, 240, 0.12);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <h1>Privacy Policy — ZAlgo</h1>
+  <p class="muted">
+    Last updated: <strong>2026-02-05</strong>
+  </p>
+
+  <p class="badge">Chrome Extension Privacy Policy</p>
+
+  <h2>1. Overview</h2>
+  <p>
+    <strong>ZAlgo Estimated Score for X Tweet</strong> (“ZAlgo”, “the extension”)
+    is a Chrome browser extension that provides an <strong>estimated engagement-based score</strong>
+    for tweets on X (formerly Twitter).
+  </p>
+  <p>
+    ZAlgo processes only <strong>publicly visible engagement signals</strong>
+    (such as likes, replies, reposts, bookmarks, and view counts) and performs
+    all computation <strong>locally inside the user’s browser</strong>.
+  </p>
+  <p>
+    <strong>No data is sent to any server.</strong>
+  </p>
+
+  <h2>2. Data Collection</h2>
+  <p>
+    ZAlgo does <strong>not</strong> collect personal data in the traditional sense.
+    The extension reads and stores the following information locally:
+  </p>
+
+  <ul>
+    <li>Public tweet engagement metrics (likes, replies, reposts, bookmarks, views)</li>
+    <li>Tweet metadata (tweet ID, creation time, media type)</li>
+    <li>Calculated score values and explainable breakdowns</li>
+    <li>Local history snapshots of score changes (limited per tweet)</li>
+  </ul>
+
+  <p class="muted">
+    This data is derived entirely from what is already visible on the X website.
+  </p>
+
+  <h2>3. How the Data Is Used</h2>
+  <p>
+    The collected data is used exclusively to:
+  </p>
+
+  <ul>
+    <li>Compute estimated engagement-based scores</li>
+    <li>Render UI overlays (badges, tooltips, profile insights)</li>
+    <li>Provide a local analytics dashboard</li>
+    <li>Maintain score history for transparency</li>
+  </ul>
+
+  <p>
+    The data is <strong>never used for tracking, advertising, profiling, or analytics</strong>.
+  </p>
+
+  <h2>4. Data Storage</h2>
+  <p>
+    All data is stored locally using:
+  </p>
+
+  <ul>
+    <li><code>chrome.storage.local</code></li>
+  </ul>
+
+  <p>
+    There is:
+  </p>
+
+  <ul>
+    <li>❌ No cloud storage</li>
+    <li>❌ No external database</li>
+    <li>❌ No synchronization across devices</li>
+  </ul>
+
+  <h2>5. Permissions</h2>
+  <p>
+    ZAlgo requests only the permissions required for its stated purpose:
+  </p>
+
+  <ul>
+    <li>
+      <strong>storage</strong> — to store scores and history locally
+    </li>
+    <li>
+      <strong>unlimitedStorage</strong> — to prevent silent eviction of local data
+      for users who analyze many tweets
+    </li>
+    <li>
+      <strong>Host permissions</strong> — limited to:
+      <ul>
+        <li><code>https://x.com/*</code></li>
+        <li><code>https://twitter.com/*</code></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>6. Data Retention & User Control</h2>
+  <p>
+    ZAlgo does not automatically delete stored data by time.
+    This is intentional to preserve score history transparency.
+  </p>
+
+  <p>
+    Users can:
+  </p>
+
+  <ul>
+    <li>View stored data summaries inside the extension</li>
+    <li>Manually clear cached data</li>
+    <li>Fully wipe all stored data at any time</li>
+  </ul>
+
+  <h2>7. Data Sharing</h2>
+  <p>
+    ZAlgo does <strong>not</strong>:
+  </p>
+
+  <ul>
+    <li>Sell user data</li>
+    <li>Share data with third parties</li>
+    <li>Transfer data to external services</li>
+    <li>Use analytics, telemetry, or tracking libraries</li>
+  </ul>
+
+  <h2>8. Network Activity</h2>
+  <p>
+    The extension makes <strong>no network requests</strong>.
+  </p>
+
+  <p class="muted">
+    All computation happens locally within the browser context.
+  </p>
+
+  <h2>9. Children’s Privacy</h2>
+  <p>
+    ZAlgo is not intended for children under the age of 13
+    and does not knowingly collect personal information from children.
+  </p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    This privacy policy may be updated as the extension evolves.
+    Any changes will be reflected on this page with an updated revision date.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    For questions or concerns regarding this privacy policy:
+  </p>
+
+  <p>
+    📧 Email: <a href="mailto:keremoztrkdev@gmail.comm">keremoztrkdev@gmail.com</a><br />
+    🐞 Issues: <a href="https://github.com/kerothebosa/zalgo/issues">
+      GitHub Issue Tracker
+    </a>
+  </p>
+
+  <footer>
+    <p>
+      ZAlgo is not affiliated with X (Twitter).
+      All product names, logos, and brands belong to their respective owners.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>
