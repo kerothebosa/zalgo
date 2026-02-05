@@ -46,7 +46,7 @@ Markdown version: [PRIVACY.md](./PRIVACY.md)
 - 🔧 X DOM changes: use **DOM Break Report**
 - 💡 Feature ideas: feature request
 
-👉 Issues: https://github.com/<your-username>/xalgo-extension-support/issues
+👉 Issues: https://github.com/kerothebosa/zalgo/issues
 
 ---
 
