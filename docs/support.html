@@ -1,113 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>ZAlgo – Support</title>
+  <meta charset="utf-8" />
+  <title>ZAlgo — Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Support and issue reporting for the ZAlgo browser extension." />
+
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      background: #ffffff;
-      color: #222;
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --soft: #f8fafc;
     }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     header {
-      padding: 40px 24px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--border);
       background: #fafafa;
     }
-    main {
+
+    .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 24px;
+      padding: 56px 24px;
     }
-    h1, h2 {
-      line-height: 1.25;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
     }
-    footer {
-      margin-top: 80px;
-      padding: 24px;
-      border-top: 1px solid #eee;
-      font-size: 0.9rem;
-      color: #555;
+
+    h2 {
+      margin-top: 2.5rem;
+      font-size: 1.4rem;
     }
+
+    p {
+      max-width: 760px;
+      color: var(--muted);
+    }
+
+    ul {
+      max-width: 760px;
+      padding-left: 1.2rem;
+      color: var(--muted);
+    }
+
     .box {
-      background: #f7f7f7;
-      padding: 16px;
-      margin: 24px 0;
-      border-left: 4px solid #ddd;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--soft);
+      padding: 24px;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>ZAlgo Support</h1>
-  <p>
-    Help, issue reporting, and general information.
-  </p>
+  <div class="container">
+    <h1>ZAlgo Support</h1>
+    <p>Help, issue reporting, and product information.</p>
+  </div>
 </header>
 
-<main>
+<main class="container">
 
-  <h2>How to Get Help</h2>
+  <h2>Getting Help</h2>
   <p>
-    ZAlgo is designed to be simple and self-contained. If you encounter issues,
+    ZAlgo is designed to be simple and self-contained. If you experience issues,
     unexpected behavior, or have questions about how the extension works,
-    you can reach support using the options below.
+    support is available using the options below.
   </p>
 
-  <h2>Report an Issue</h2>
+  <h2>Reporting Issues</h2>
   <p>
-    If something does not work as expected (for example, indicators not appearing
-    after a platform interface change), please include:
+    When reporting an issue, please include:
   </p>
-
   <ul>
     <li>The page URL where the issue occurred</li>
-    <li>A short description of what you expected vs. what happened</li>
+    <li>A brief description of expected vs actual behavior</li>
     <li>Your browser version</li>
   </ul>
 
   <div class="box">
-    <strong>Recommended:</strong><br />
-    Submit issues via the project’s GitHub repository issue tracker.
+    <strong>Preferred support channel</strong><br />
+    Please submit issues through the project’s GitHub issue tracker.
   </div>
 
   <h2>Privacy & Data Questions</h2>
   <p>
-    ZAlgo does not transmit data externally. All processing and storage occur locally
-    within the browser. If you have questions about data handling, storage cleanup,
-    or permissions, please consult the privacy documentation linked from the store listing
-    or contact support.
+    ZAlgo performs all processing locally in the browser and does not transmit data
+    externally. Questions related to data storage, permissions, or cleanup are welcome.
   </p>
 
-  <h2>What Support Cannot Do</h2>
+  <h2>Support Limitations</h2>
   <ul>
-    <li>Access your browsing data</li>
-    <li>Recover deleted local data</li>
-    <li>Modify platform behavior or rankings</li>
-    <li>Provide official platform insights</li>
+    <li>No access to user browsing data</li>
+    <li>No recovery of deleted local data</li>
+    <li>No ability to modify platform behavior</li>
+    <li>No official platform insights or endorsements</li>
   </ul>
 
-  <h2>Branding & Affiliation</h2>
+  <h2>Branding Notice</h2>
   <p>
-    ZAlgo is an independent project. Support communications do not represent
-    X Corp., Twitter, or any affiliated organization.
+    ZAlgo is an independent project and is not affiliated with X Corp., Twitter,
+    or any related organization.
   </p>
 
 </main>
 
 <footer>
-  <p>
-    © ZAlgo. Support information page.
-  </p>
-  <p>
-    This page exists to satisfy Chrome Web Store support requirements
-    and to provide users with a clear support path.
-  </p>
+  <p>© ZAlgo</p>
+  <p>This support page satisfies Chrome Web Store support requirements.</p>
 </footer>
 
 </body>
